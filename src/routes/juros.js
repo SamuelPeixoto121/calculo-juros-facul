@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import { calculaParcela } from '../lib/calculaParcela.js';
 
 const router = Router();
 
@@ -21,6 +22,7 @@ router.post('/simples', (req, res) => {
 		periodos,
 		juros: Number((montante - capital).toFixed(2)),
 		montante: Number(montante.toFixed(2)),
+		parcelas: calculaParcela(montante, periodos),
 	});
 });
 
@@ -43,6 +45,7 @@ router.post('/composto', (req, res) => {
 		periodos,
 		juros: Number((montante - capital).toFixed(2)),
 		montante: Number(montante.toFixed(2)),
+		parcelas: calculaParcela(montante, periodos),
 	});
 });
 
