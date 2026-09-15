@@ -1,0 +1,27 @@
+1. Como rodar a API?
+ - Abra o terminal do VSCode e rode o comando "npm install" ele vai instalar todas as 
+   dependências do projeto que estão listados no arquivo package.json.
+ - Após instalar as dependências rode o comando "npm run dev", dentro do arquivo package.json
+   no nó "scripts" temos o "dev" e "start" a diferença entre eles é a flag --watch, essa flag reinicia o código
+   toda vez que salvar qualquer arquivo.
+ - Se aparecer a mensagem "API rodando em http://localhost:3000", funcionou.
+
+2. Como testar?
+ - Instale o aplicativo Postman -> https://www.postman.com/downloads/
+ - Dentro do postman faça um requisição GET na URL -> http://localhost:3000/api/health
+ - Você deve receber uma resposta com HTTP Status 200 com este objeto:
+ `
+    {
+        "status": "ok",
+        "mensagem": "API está ok"
+    }
+ `
+
+3. Como criar uma nova rota e endpoint?
+ - Crie um arquivo na pasta src\routes com um nome que faça sentido com o tema daquela rota, de exemplo crie um arquivo "teste.js"
+ - Leia o arquivo src\routes\teste-exemplo.js e replique o conteúdo deste arquivo no seu arquivo teste.js
+ - No arquivo src\routes\index.js, import a rota que você exportou no teste.js
+ - Adicione uma linha: router.use('/teste', objetoImportado);
+ - a string é o caminho que usaremos para acessar o endpoint
+ - Agora teste, utilize a URL: http://localhost:3000/api/ "string do router.use()" / "endpoint que você criou"
+   o método da requisição precisa ser o mesmo que você criou o endpoint
