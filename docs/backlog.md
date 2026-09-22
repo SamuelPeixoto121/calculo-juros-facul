@@ -1,5 +1,8 @@
 # Backlog — API de Cálculo de Juros
 
+> **Versão em uso pela equipe de desenvolvimento:** `docs/backlog-api.md` (8 tarefas, formato de
+> guia passo a passo). Este arquivo é o backlog completo do processo BPMN e serve de contexto.
+
 > Base para a rodada de planning poker (10 participantes). As tarefas **não têm estimativa** —
 > a coluna de pontos é preenchida na sessão. Fontes: `docs/inventario-processos.md` (processo
 > BPMN, atividades #1–#35), `docs/research_tabela-juros-brasil_20260831.md` (fundamentação
