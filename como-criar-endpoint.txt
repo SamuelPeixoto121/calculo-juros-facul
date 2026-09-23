@@ -1,7 +1,7 @@
 1. Como rodar a API?
  - Abra o terminal do VSCode e rode o comando "npm install" ele vai instalar todas as 
    dependências do projeto que estão listados no arquivo package.json.
- - Após instalar as dependências rode o comando "npm run dev", dentro do arquivo package.json
+ - Após instalar as dependências rode o comando "npm run dev", olhe a lista de scripts dentro do arquivo package.json
    no nó "scripts" temos o "dev" e "start" a diferença entre eles é a flag --watch, essa flag reinicia o código
    toda vez que salvar qualquer arquivo.
  - Se aparecer a mensagem "API rodando em http://localhost:3000", funcionou.
